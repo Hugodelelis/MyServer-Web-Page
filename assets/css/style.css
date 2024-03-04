@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.2rem;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.main-bg {
+  background-color: black;
+  color: white;
+}
+
+.cyan-bg {
+  background-color: rgb(147, 212, 234);
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  min-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  background-color: rgb(36, 35, 35);
+}
+
+.menu-content {
+  min-width: 120rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.menu-content a {
+  color: cyan;
+  display: block;
+}
+
+.list-flex ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-flex ul li {
+  margin: 0 2rem;
+  list-style: none;
+  padding: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.list-flex ul li:hover {
+  background-color: black;
+  border-radius: 2rem;
+}
+
+.home-content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.box-content {
+  min-height: 30rem;
+  max-width: 75rem;
+  border-bottom: 0.6rem solid rgb(147, 212, 234);
+  border-top: 0.6rem solid rgb(147, 212, 234);
+  background-color: rgba(0, 0, 0, 0.189);
+  border-radius: 3rem;
+  padding: 5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.box-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.img-content {
+  align-self: self-end;
+  margin-bottom: 5rem;
+  box-shadow: 1rem -1rem 1rem aqua;
+  border-radius: 12rem;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12rem;
+}
+
+.planos-content {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos-content h2 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  text-align: left;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 100%;
+  min-height: 50rem;
+}
+
+.plan-grid-content {
+  background-color: rgba(36, 35, 35);
+  border-radius: 3rem;
+  width: 100%;
+  min-height: 100%;
+  color: white;
+  padding: 4rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr, 2fr, 0.5fr);
+  justify-content: center;
+}
+
+.title-grid-content h3 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.title-grid-content p {
+  border-bottom: 0.3rem solid white;
+}
+
+.beneficios-content ul li {
+  margin-bottom: 2rem;
+}
+
+.assine-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.assine-content button {
+  padding: 1rem;
+  border: 0.3rem solid cyan;
+  border-radius: 3rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.assine-content button:hover {
+  background-color: cyan;
+  color: black;
+}
+
+.suporte-content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.suporte-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.suporte-content h2 {
+  text-align: left;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+form {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.form-grid-content {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 2rem;
+}
+
+.form-grid-content label {
+  color: aqua;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-grid-content input,
+textarea {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.form-grid-content ::placeholder {
+  color: rgba(83, 78, 78, 0.429);
+}
+
+.form-grid-content :where(input, textarea):focus {
+  box-shadow: 1rem -1rem 2rem aqua;
+  outline: none;
+}
+
+.form-grid-content button {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: aqua;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  transition: all 200ms ease-out;
+}
+
+.form-grid-content button:hover {
+  background-color: rgba(0, 255, 255, 0.559);
+}
+
+@media (max-width: 800px) {
+  .home-content,
+  .plan-grid,
+  .suporte-content {
+    grid-template-columns: 1fr;
+  }
+
+  .title-grid-content {
+    margin-bottom: 2rem;
+  }
+
+  .box-content {
+    margin-top: 10rem;
+  }
+}

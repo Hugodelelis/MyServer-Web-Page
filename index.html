@@ -13,11 +13,13 @@
     <title>MyServer</title>
   </head>
   <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu">
       <header class="menu-content">
-        <h1><a href="#home">MyServer</a></h1>
+        <h1><a onclick="getElementById('close-menu').checked = false" href="#home">MyServer</a></h1>
         <nav class="list-flex">
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false">
             <li><a href="#home">Home</a></li>
             <li><a href="#planos">Planos</a></li>
             <li><a href="#suporte">Suporte</a></li>

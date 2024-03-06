@@ -272,6 +272,10 @@ textarea {
   background-color: rgba(0, 255, 255, 0.559);
 }
 
+#close-menu {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .home-content,
   .plan-grid,
@@ -280,10 +284,74 @@ textarea {
   }
 
   .title-grid-content {
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
   }
 
-  .box-content {
-    margin-top: 10rem;
+  .beneficios-content ul {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+  }
+
+  .menu {
+    height: 100vh;
+    display: none;
+  }
+
+  .menu-content {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1rem;
+  }
+
+  .list-flex {
+    min-height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .list-flex ul {
+    margin-top: 1rem;
+    max-width: 10rem;
+  }
+
+  .list-flex ul li {
+    margin-top: 2rem;
+  }
+
+  .close-menu {
+    position: fixed;
+  }
+
+  #close-menu {
+    display: none;
+  }
+
+  .close-menu-label::after {
+    content: "≡";
+    position: fixed;
+    font-size: 3rem;
+    z-index: 3;
+    top: 2rem;
+    right: 2rem;
+    background-color: white;
+    color: black;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
   }
 }
